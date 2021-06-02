@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "723788123583",
+    "project_id": "n11demo",
+    "storage_bucket": "n11demo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:723788123583:android:9fb349b3a732dba79d250a",
+        "android_client_info": {
+          "package_name": "com.muazekici.n11sample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "723788123583-9c97o8j4g3oh1te4d7uukjkupiao63e2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8ssrb901dqUbOxpK-egvbb94hvkvUYgY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "723788123583-9c97o8j4g3oh1te4d7uukjkupiao63e2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="user"
+            type="com.muazekici.n11sample.gateways_adapters.models.UserSimple" />
+
+        <variable
+            name="holder"
+            type="com.muazekici.n11sample.ui.main.fragment_search.AdapterUserSearchList.UserSearchItemViewHolder" />
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="@{holder::onItemSelected}"
+        app:cardCornerRadius="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:gravity="center"
+                android:lines="2"
+                android:text="@{user.userName}"
+
+                tools:text="test user name" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/CBFavorite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:button="@drawable/selector_favorite"
+                android:checked="@{user.favorite}"
+
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+
+                android:onCheckedChanged="@{holder::onCheckChanged}"
+                android:padding="0dp" />
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</layout>
